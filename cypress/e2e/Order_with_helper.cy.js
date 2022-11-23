@@ -4,7 +4,7 @@ import RegistrationPage from '../support/Pages/RegistrationPage'
 import AutorizationPage from '../support/Pages/AutorizationPage'
 import { faker } from '@faker-js/faker';
 import OrderPage from '../support/Pages/OrderPage'
-import {Search_Product} from '../support/Pages/Helper'
+import { Search_Product } from '../support/Pages/Helper'
 
 let user = {
   email: faker.internet.email(12),
@@ -40,7 +40,8 @@ describe('Order with search helper', () => {
     Search_Product('Strawberry Juice');
     OrderPage.get_Add_to_Basket_btn().click()
     OrderPage.get_Basket().click()
-    cy.reload() // For some reasons Checkout Button is disabled, that why we reload the page!
+    cy.log(`For some reasons Checkout Button is disabled, that is why we reload the page!`)
+    cy.reload()
     OrderPage.get_Checkout_btn().click()
     OrderPage.get_Add_New_Adress().click()
     OrderPage.get_Country_Adress_page().type(user.country)

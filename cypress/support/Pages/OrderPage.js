@@ -9,31 +9,31 @@ class OrderPage {
     get_Checkout_btn() {
         return cy.get('#checkoutButton')
     }
-    get_Add_New_Adress(){
+    get_Add_New_Adress() {
         return cy.get('button[aria-label="Add a new address"]')
     }
-    get_Country_Adress_page(){
+    get_Country_Adress_page() {
         return cy.get('input[placeholder="Please provide a country."]')
     }
-    get_Name_Adress_page(){
+    get_Name_Adress_page() {
         return cy.get('input[placeholder="Please provide a name."')
     }
-    get_Mobile_Adress_page(){
+    get_Mobile_Adress_page() {
         return cy.get('input[placeholder="Please provide a mobile number."]')
     }
-    get_ZIP_Adress_page(){
+    get_ZIP_Adress_page() {
         return cy.get('input[placeholder="Please provide a ZIP code."]')
     }
-    get_Adress_Adress_page(){
+    get_Adress_Adress_page() {
         return cy.get('textarea[data-placeholder="Please provide an address."]')
     }
-    get_City_Adress_page(){
+    get_City_Adress_page() {
         return cy.get('input[placeholder="Please provide a city."]')
     }
-    get_Submit_on_Adress_page(){
+    get_Submit_on_Adress_page() {
         return cy.get('button[id="submitButton"]')
     }
-    get_State_Adress_page(){
+    get_State_Adress_page() {
         return cy.get('input[placeholder="Please provide a state."]')
     }
     get_Firs_Adress() {
@@ -48,22 +48,22 @@ class OrderPage {
     get_Continue_btn_on_Delivery_page() {
         return cy.get('button[aria-label="Proceed to delivery method selection"]')
     }
-    get_Add_Credit_card(){
+    get_Add_Credit_card() {
         return cy.get('[id="mat-expansion-panel-header-0"]')
     }
-    get_Credt_card_Name(){
+    get_Credt_card_Name() {
         return cy.get('input[type="text"]')
     }
-    get_Credit_card_Number(){
+    get_Credit_card_Number() {
         return cy.get('[type="number"]')
     }
-    get_Credit_card_Month_Expiry(){
+    get_Credit_card_Month_Expiry() {
         return cy.get('select').eq(0)
     }
-    get_Credit_card_Year_Expiry(){
+    get_Credit_card_Year_Expiry() {
         return cy.get('select').eq(1)
     }
-    get_Submit_Credit_card_Data(){
+    get_Submit_Credit_card_Data() {
         return cy.get('[id="submitButton"]')
     }
     get_First_Credit_Cart() {
